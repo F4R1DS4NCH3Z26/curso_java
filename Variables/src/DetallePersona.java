@@ -2,7 +2,7 @@ public class DetallePersona {
     public static void main(String[] args) {
         String nombreCompleto = "Farid Andres Sanchez Orozco";
         int edad = 23;
-        double altura = 1.76;
+        float altura = 1.76F;
         String paisOrigen = "Colombia";
         char estadoCivil = 'C';
 
