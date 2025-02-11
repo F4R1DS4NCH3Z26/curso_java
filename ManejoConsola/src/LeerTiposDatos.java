@@ -1,4 +1,4 @@
-import java.util.Scanner;
+    import java.util.Scanner;
 
 public class LeerTiposDatos {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class LeerTiposDatos {
         var edad = consola.nextInt();
         System.out.println("edad = " + edad);
         
-        System.out.print("Introduzca su altura: ");
+        System.out.print("Introduzca su altura en centimetro: ");
         var altura = consola.nextDouble();
         System.out.println("altura = " + altura);
         consola.nextLine();
