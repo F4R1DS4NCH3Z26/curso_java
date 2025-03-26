@@ -17,7 +17,7 @@ public class RecetaCocina {
         var dificultad = consola.nextLine().toLowerCase();
 
       /*  while (dificultad != "FACIL") {
-            System.out.println("PON ALGO BUENO COMPAE");
+            System.out.println("PON ALGO BUENO COMPAE"  );
             System.out.print("Escriba la dificultad (Facil, Media o Alta): ");
             dificultad = consola.nextLine().toLowerCase();
 

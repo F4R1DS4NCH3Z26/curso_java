@@ -19,7 +19,7 @@ public class SistemasEmpleados {
         System.out.println("");
         System.out.println("- Nombre Empleado = " + nombre_empleado);
         System.out.println("- Edad = " + edad);
-        System.out.println("- Salario = $%.2f".formatted(salario    ));
+        System.out.println("- Salario = $%.2f".formatted(salario));
         System.out.println("- Jefe Departamento = " + jefe_departamento);
 
 
