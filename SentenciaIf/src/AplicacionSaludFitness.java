@@ -18,7 +18,7 @@ public class AplicacionSaludFitness {
         var meta_alcanzada = (pasos_caminados >= META_PASOS_DIARIO) ? "Si :)" : "No :(";
 
         System.out.printf("""
-                ------------------------------- 
+                -------------------------------
                 - Nombre de usuario: %s
                 - Pasosa caminados: %s / %s
                 - Cumple con la meta? %s
