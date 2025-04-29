@@ -14,7 +14,7 @@ public class SistemaReservaHotel {
         System.out.print("¿Cuarto con vista al mas? (true/false): ");
         var vista_mar = Boolean.parseBoolean(consola.nextLine());
 
-        var costo_cuarto = (vista_mar) ? 190.50 : 150.50;
+        final var costo_cuarto = (vista_mar) ? 190.50 : 150.50;
         var costo_total_cuarto = dias_estadia * costo_cuarto;
 
         System.out.printf("""
