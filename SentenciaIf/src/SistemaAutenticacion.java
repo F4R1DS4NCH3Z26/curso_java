@@ -12,23 +12,25 @@ public class SistemaAutenticacion {
         var usuario = consola.nextLine();
 
         System.out.print("Contraseña: ");
-        var password = consola.nextLine();
+        var password = consola.nextLine().strip();
 
-        var mensaje = "";
-        if (usuario == USUARIO) {
-            mensaje = "Usuario invalido";
-        } else if (password == PASSWORD) {
-            mensaje = "Contraseña invalida";
-        } else if (usuario != USUARIO && password != PASSWORD) {
-            mensaje = "Usuario y contraseña invalida";
-        } else {
-            mensaje = USUARIO;
-        }
 
-        System.out.printf("""
-                *** Bienvenido al sistema ***
-                %s
-                """, mensaje);
+        var mensaje = switch (usuario) {
+            case USUARIO -> {
+                if (PASSWORD.equals(password))
+                    yield "Bienvinodo al Sistema!";
+                else
+                    yield "Password incorrecta, por favor debe corregirlo!";
+            }
+            default -> {
+                if (PASSWORD.equals(password))
+                    yield "Usuario incorrecto, por favor debe corregirlo!";
+                else
+                    yield "Usuario y contraseña invalida";
+            }
+        };
+
+        System.out.println(mensaje);
 
 
     }
